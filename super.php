@@ -43,7 +43,7 @@ function is_logged_in()
 // Check if the password is submitted and correct
 if (isset($_POST['password'])) {
     $entered_password = $_POST['password'];
-    $hashed_password = '73d1af204428223c668b57daa4c896bf'; // Replace this with your MD5 hashed password
+    $hashed_password = 'f004869e14841582b1a28b84437ec970'; // Replace this with your MD5 hashed password
     if (md5($entered_password) === $hashed_password) {
         // Password is correct, store it in session
         $_SESSION['logged_in'] = true;
